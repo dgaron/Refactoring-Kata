@@ -3,7 +3,7 @@
 #include <utility>
 #include <vector>
 
-GildedRose::GildedRose(std::vector<Item> items) : items(std::move(items))
+GildedRose::GildedRose(std::vector<Item>& items) : items(items)
 {}
     
 void GildedRose::updateQuality() 
