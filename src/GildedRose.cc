@@ -1,8 +1,9 @@
 #include "GildedRose.h"
 
-using namespace std;
+#include <utility>
+#include <vector>
 
-GildedRose::GildedRose(vector<Item> & items) : items(items)
+GildedRose::GildedRose(std::vector<Item> items) : items(std::move(items))
 {}
     
 void GildedRose::updateQuality() 

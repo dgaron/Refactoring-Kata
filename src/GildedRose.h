@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GILDED_ROSE_H
+#define GILDED_ROSE_H
 
 #include <string>
 #include <vector>
@@ -21,3 +22,5 @@ public:
     
     void updateQuality();
 };
+
+#endif // GILDED_ROSE_H
